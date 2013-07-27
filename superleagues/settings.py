@@ -1,7 +1,11 @@
+import os
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))+'/../'
+
 # Django settings for superleagues project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -108,6 +112,7 @@ ROOT_URLCONF = 'superleagues.urls'
 WSGI_APPLICATION = 'superleagues.wsgi.application'
 
 TEMPLATE_DIRS = (
+    PROJECT_ROOT + '/templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
